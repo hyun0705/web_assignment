@@ -1,0 +1,35 @@
+.footer-container {
+    display: flex; /* Flexbox 레이아웃 */
+    flex-direction: column; /* 플렉스 항목을 세로 방향으로 정렬 */
+    width: 100%; /* 컨테이너의 너비를 100%로 설정 */
+}
+
+.footer-item {
+    background-color: #F2F2F2; /* 배경색을 설정 */
+    display: flex; /* Flexbox 레이아웃 */
+    color: black; /* 글자 색상을 검정색으로 설정 */
+    font-size: 14px; /* 글자 크기를 16px로 설정 */
+    padding-right: 10px; /* 오른쪽 여백을 20px로 설정 */
+    padding-left: 20px; /* 왼쪽 여백을 20px로 설정 */
+}
+
+.footer-item-1 {
+    border-bottom: 1px solid #DADCE0; /* 하단 테두리를 설정(대한민국 아래 */
+}
+
+.footer-item-2 {
+    justify-content: space-between; /* 항목을 양쪽 끝으로 정렬 */
+}
+
+.footer-item-left {
+    display: flex; /* 왼쪽 항목을 Flexbox 레이아웃 */
+}
+
+.footer-item-right {
+    display: flex; /* 오른쪽 항목을 Flexbox 레이아웃 */
+    margin-right: 10px; /* 오른쪽 여백을 10px로 설정 */
+}
+
+.footer-items {
+    padding: 16px; /* 안쪽 여백을 15px로 설정 */
+}

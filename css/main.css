@@ -1,0 +1,129 @@
+.main-container {
+    display: flex; /* 컨테이너를 플렉스 박스로 설정 */
+    flex-direction: column; /* 플렉스 항목을 세로 방향으로 정렬 */
+    margin: auto; /* 자동으로 가운데 정렬 */
+    align-items: center; /* 항목을 가운데로 정렬 */
+    gap: 10px; /* 항목 간격을 10px로 설정 */
+    margin-bottom: 24%; /* 아래쪽 여백을 24%로 설정 */
+}
+
+.main-img-container {
+    flex-grow: 1; /* 남은 공간을 모두 차지 */
+    display: flex; /* 컨테이너를 플렉스 박스로 설정 */
+    flex-direction: column; /* 플렉스 항목을 세로 방향으로 정렬 */
+    align-items: center; /* 항목을 가운데로 정렬 */
+    max-height: 290px; /* 최대 높이를 290px로 설정 */
+    width: "292";
+    height: "92"; /* 높이를 100%에서 560px 뺀 값으로 설정 */
+}
+
+.main-img-box {
+    margin-top: auto; /* 상단 여백을 자동으로 설정 (남은 공간 모두 차지) */
+}
+
+.main-search-btn {
+    display: flex; /* 컨테이너를 플렉스 박스로 설정 */
+    flex-direction: column; /* 플렉스 항목을 세로 방향으로 정렬 */
+    align-items: center; /* 항목을 가운데로 정렬 */
+    gap: 20px; /* 항목 간격을 20px로 설정 */
+    margin: 20px 0; /* 상하 여백을 20px로 설정 */
+}
+
+.main-button {
+    display: flex; /* 컨테이너를 플렉스 박스로 설정 */
+}
+
+.search-bar {
+    width: 550px; /* 너비를 550px로 설정 */
+}
+
+.google-search {
+    display: flex; /* 컨테이너를 플렉스 박스로 설정 */
+    width: 650px; /* 너비를 650px로 설정 */
+    height: 50px; /* 높이를 50px로 설정 */
+    border: 1px solid #DFE1E5; /* 테두리를 회색으로 설정 */
+    background-color: #fff; /* 배경색을 흰색으로 설정 */
+    border-radius: 25px; /* 테두리를 둥글게 설정 */
+    justify-content: center; /* 항목을 가운데로 정렬 */
+    align-items: center; /* 항목을 가운데로 정렬 */
+}
+
+.google-search:hover {
+    box-shadow: 0 0 5px #c6c9ce; /* 그림자 효과를 추가 */
+}
+
+.search-items {
+    padding: 10px; /* 안쪽 여백을 10px로 설정 */
+}
+
+.search-bar {
+    border: 0; /* 테두리를 없앰 */
+    width: 480px; /* 너비를 480px로 설정 */
+    height: 40px; /* 높이를 40px로 설정 */
+    background-color: inherit; /* 배경색을 부모 요소의 배경색과 동일하게 설정 */
+    color: black; /* 글자 색상을 검정색으로 설정 */
+}
+
+.search-bar:focus {
+    outline: none; /* 포커스 시 외곽선을 없앰 */
+    caret-color: black; /* 캐럿(텍스트 입력 커서)의 색상을 검정색으로 설정 */
+}
+
+.keybo,
+.mic {
+    position: relative; /* 상대적 위치를 설정 */
+}
+
+.keybo-content {
+    display: none; /* 기본적으로 숨김 */
+    position: absolute; /* 절대 위치를 설정 */
+    background-color: #2d2d2d; /* 배경색을 어두운 회색으로 설정 */
+    font-size: 0.5em; /* 글자 크기를 0.5em으로 설정 */
+    color: #fff; /* 글자 색상을 흰색으로 설정 */
+    border: 1px solid white; /* 테두리를 흰색으로 설정 */
+    padding: 5px 10px; /* 안쪽 여백을 설정 */
+    width: 55px; /* 너비를 55px로 설정 */
+    left: -20px; /* 왼쪽 위치를 -20px로 설정 */
+    top: 50px; /* 위쪽 위치를 50px로 설정 */
+}
+
+.keybo:hover .keybo-content {
+    display: block; /* 호버 시 표시 */
+}
+
+.mic-content {
+    display: none; /* 기본적으로 숨김 */
+    position: absolute; /* 절대 위치를 설정 */
+    background-color: #2d2d2d; /* 배경색을 어두운 회색으로 설정 */
+    font-size: 0.5em; /* 글자 크기를 0.5em으로 설정 */
+    color: #fff; /* 글자 색상을 흰색으로 설정 */
+    border: 1px solid white; /* 테두리를 흰색으로 설정 */
+    padding: 5px 10px; /* 안쪽 여백을 설정 */
+    width: 55px; /* 너비를 55px로 설정 */
+    left: -25px; /* 왼쪽 위치를 -25px로 설정 */
+    top: 50px; /* 위쪽 위치를 50px로 설정 */
+}
+
+.mic:hover .mic-content {
+    display: block; /* 호버 시 표시 */
+}
+
+.google-button {
+    height: 35px; /* 높이를 35px로 설정 */
+    padding: 5px 15px; /* 안쪽 여백을 설정 */
+    margin: 10px; /* 바깥 여백을 10px로 설정 */
+    font-size: 14px; /* 글자 크기를 14px로 설정 */
+    background-color: #F8F9FA; /* 배경색을 연한 회색으로 설정 */
+    color: black; /* 글자 색상을 검정색으로 설정 */
+    border: 1px solid #F8F9FA; /* 테두리를 연한 회색으로 설정 */
+    border-radius: 5px; /* 테두리를 둥글게 설정 */
+}
+
+.google-button:hover {
+    cursor: pointer; /* 호버 시 커서를 포인터로 변경 */
+    border: 1px solid #DADCE0; /* 호버 시 테두리 색상을 회색으로 변경 */
+}
+
+.main-blank {
+    flex-grow: 1; /* 남은 공간을 모두 차지 */
+}

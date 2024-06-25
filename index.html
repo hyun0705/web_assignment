@@ -1,0 +1,118 @@
+</html>
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <script src="https://kit.fontawesome.com/1146666008.js" crossorigin="anonymous"></script>
+    <title>Google</title>
+</head>
+
+<body>
+    <div class="body-container">
+        <!-- 헤더 -->
+        <div class="header-container">
+            <div class="header-item-1">
+                <div class="header-item-left"><a
+                        href="https://about.google/?fg=1&utm_source=google-KR&utm_medium=referral&utm_campaign=hp-header">Google
+                        정보</a></div>
+                <div class="header-item-left"><a
+                        href="https://store.google.com/KR/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=ko">스토어</a>
+                </div>
+            </div>
+
+            <div class="header-item-1">
+                <div class="header-item-right"><a
+                        href="https://accounts.google.com/v3/signin/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F%26ogbl%2F&emr=1&ifkv=AaSxoQyCyxo3SNHZ0epYQDNEivXi-cqu-Z2IURUaV_43YEsj-FSql670zsYgB6sVL6RhcDDkxS-N&ltmpl=default&ltmplcache=2&osid=1&passive=true&rm=false&scc=1&service=mail&ss=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin&dsh=S-66407449%3A1716717807164847&ddm=0">Gmail</a>
+                </div>
+                <div class="header-item-right"><a href="https://www.google.com/imghp?hl=ko&ogbl">이미지</a></div>
+                <div style="position:relative">
+                    <div class="header-item-right menu1"><a href="/"><i class="fa-solid fa-bars"></i></a></div>
+                    <div class="menu1-content">Google 앱</div>
+                </div>
+                <div class="header-item-right"><button class="login-button"><a
+                            href="https://accounts.google.com/InteractiveLogin">로그인</a></button></div>
+            </div>
+        </div>
+
+        <!-- 메인 -->
+        <div class="main-img-container">
+            <div class="main-img-box">
+                <img class="main-img" src="./img/구글.png" alt="구글">
+            </div>
+        </div>
+        <div class="main-search-btn">
+            <div class="main-search">
+                <!-- 검색 바 만들기 -->
+                <div class="google-search">
+                    <div class="search-items" style="font-size:20px;color:dimgray;"><i
+                            class="fa-solid fa-magnifying-glass"></i></div>
+                    <div class="search-items"><input class="search-bar" type="search" id="search-input"></div>
+                    <div class="search-items keybo" style="font-size:25px;color:dimgray;cursor:pointer;"><i
+                            class="fa-solid fa-keyboard"></i>
+                        <div class="keybo-content">입력 도구</div>
+                    </div>
+                    <div class="search-items mic" style="font-size:25px;color:black;cursor:pointer;"><i
+                            class="fa-solid fa-microphone-lines"></i>
+                        <div class="mic-content">음성 검색</div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-button">
+                <div><input class="google-button" type="button" value="Google 검색"></div>
+                <div><input class="google-button" type="button" value="I'm Feeling Lucky"
+                        onclick="location.href='https://doodles.google/'"></div>
+            </div>
+        </div>
+        <div class="main-blank"></div>
+
+        <!-- 푸터 -->
+        <div class="footer-container">
+            <div class="footer-item footer-item-1">
+                <div class="footer-items">대한민국</div>
+            </div>
+            <div class="footer-item footer-item-2">
+                <div class="footer-item-left">
+                    <div class="footer-items"><a
+                            href="https://ads.google.com/intl/ko_kr/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">광고</a>
+                    </div>
+                    <div class="footer-items"><a href="https://www.google.com/intl/ko_kr/business/">비즈니스</a></div>
+                    <div class="footer-items"><a href="https://www.google.com/search/howsearchworks/?fg=1">검색의 원리</a>
+                    </div>
+                </div>
+                <div class="footer-item-right">
+                    <div class="footer-items"><a href="https://policies.google.com/privacy?hl=ko&fg=1">개인정보처리방침</a>
+                    </div>
+                    <div class="footer-items"><a href="https://policies.google.com/terms?hl=ko&fg=1">약관</a></div>
+                    <div class="footer-items"><a href="https://www.google.com/preferences?hl=ko&fg=1">설정</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 검색을 수행하는 함수 정의
+        function searchGoogle() {// 검색 창의 입력 값을 가져옴
+            var query = document.getElementById('search-input').value;// 구글 검색 URL을 생성, 입력 값을 쿼리 파라미터로 인코딩하여 추가
+            var url = 'https://www.google.com/search?q=' + encodeURIComponent(query);// 생성된 URL로 페이지를 이동
+            window.location.href = url;
+        }
+    
+        // 'search-input' 요소에 'keypress' 이벤트 리스너 추가
+        document.getElementById('search-input').addEventListener('keypress', function (e) {// 엔터 키가 눌렸을 때
+            if (e.key === 'Enter') { // 기본 엔터 동작(폼 제출)을 막음
+                e.preventDefault();// searchGoogle 함수 호출
+                searchGoogle();
+            }
+        });
+    </script>
+    
+</body>
+
+</html>

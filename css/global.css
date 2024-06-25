@@ -1,0 +1,29 @@
+html {
+    height: 100%; /* HTML 요소의 높이를 100%로 설정 */
+}
+
+body {
+    background-color: #fff; /* 배경색을 흰색으로 설정 */
+    color: black; /* 글자 색상을 검정색으로 설정 */
+    font-size: 14px; /* 글자 크기를 14px로 설정 */
+    font-family: Apple SD Gothic Neo, arial, sans-serif; /* 글꼴을 설정 */
+    width: 100%; /* 너비를 100%로 설정 */
+    height: 100%; /* 높이를 100%로 설정 */
+    margin: 0; /* 바깥 여백을 0으로 설정 */
+    min-width: 400px; /* 최소 너비를 400px로 설정 */
+}
+
+a:hover {
+    text-decoration: underline; /* 링크에 마우스를 올렸을 때 밑줄 표시 */
+}
+
+a {
+    text-decoration: none; /* 링크의 밑줄 제거 */
+    color: inherit; /* 링크 색상을 부모 요소의 색상과 동일하게 설정 */
+}
+
+.body-container {
+    display: flex; /* 컨테이너를 Flexbox 레이아웃 */
+    flex-direction: column; /* 플렉스 항목을 세로 방향으로 정렬 */
+    height: 100%; /* 컨테이너의 높이를 100%로 설정 */
+}
